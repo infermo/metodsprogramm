@@ -20,7 +20,7 @@ namespace Laba_1
         static void Main(string[] args)
         {
             int klient = Convert.ToInt32(Console.ReadLine());
-            List<string> spisokpidorasov = new List<string>(); 
+            List<string> spisok = new List<string>(); 
             int[] parik_time = new int[3] {0,0,0};
             for (int i=0; i < klient; i++)
             {
@@ -35,9 +35,9 @@ namespace Laba_1
                 {
                     parik_time[min] += 30;
                 }
-                spisokpidorasov.Add(Convert.ToString(parik_time[min] / 60 + " " + parik_time[min] % 60));
+                spisok.Add(Convert.ToString(parik_time[min] / 60 + " " + parik_time[min] % 60));
             }
-            foreach (var item in spisokpidorasov)
+            foreach (var item in spisok)
             {
                 Console.WriteLine(item);
             }            
