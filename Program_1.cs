@@ -14,14 +14,14 @@ namespace Laba_2
             string digit = "" + number[1] + number[2] + number[3];
             string chars = "" + number[0] + number[4] + number[5];                        
             Permute(chars.ToCharArray(), 0, 2);
-            List<string> huy = combination;
+            List<string> combchrs = combination;
             combination = new List<string>();
             Permute(digit.ToCharArray(), 0, 2);
-            List<string> huy_1 = combination;
+            List<string> combdgts = combination;
             combination = new List<string>();            
-            foreach (string chrs in huy)
+            foreach (string chrs in combchrs)
             {
-                foreach (string dgts in huy_1)
+                foreach (string dgts in combdgts)
                 {
                     combination.Add(Convert.ToString(chrs.First()+ dgts + chrs.Substring(1)));
                 }
@@ -40,13 +40,13 @@ namespace Laba_2
             int j;
             if (i == n)
             {
-                string chlen = "" ;
+                string chrss = "" ;
                 foreach (char  c in arry)
                 {
-                    chlen += c;
+                    chrss += c;
                 }  
-                if(!combination.Contains(chlen)) {
-                    combination.Add(chlen);
+                if(!combination.Contains(chrss)) {
+                    combination.Add(chrss);
                 }
                
             }
