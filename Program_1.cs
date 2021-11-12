@@ -9,6 +9,7 @@ namespace Laba_2
     {     
         static List<string> combination = new List<string>();       
         static void Main(string[] args)
+
         {            
             string number = Console.ReadLine();     
             string digit = "" + number[1] + number[2] + number[3];
