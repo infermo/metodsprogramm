@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace Laba_1
 {
-    class Program
+    class Program 
+
     { 
         static int Min(int[] item)
         {
